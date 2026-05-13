@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공지사항 | 브루잉소울 Brewing Soul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark"></span><span>Brewing Soul</span></a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="about.html">법인소개</a></li>
+          <li><a href="business.html">사업소개</a></li>
+          <li><a href="history.html">연혁</a></li>
+          <li><a href="gallery.html">갤러리</a></li>
+          <li><a href="notice.html" class="is-active">공지사항</a></li>
+          <li><a href="contact.html">문의</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn--gradient nav-cta">문의하기</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="about.html">법인소개</a></li>
+      <li><a href="business.html">사업소개</a></li>
+      <li><a href="history.html">연혁</a></li>
+      <li><a href="gallery.html">갤러리</a></li>
+      <li><a href="notice.html" class="is-active">공지사항</a></li>
+      <li><a href="contact.html">문의</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <span class="blob" style="width:380px;height:380px;top:-100px;right:-120px;background:var(--color-purple);"></span>
+      <span class="blob" style="width:280px;height:280px;bottom:-100px;left:10%;background:var(--color-yellow);"></span>
+      <div class="container page-hero-content reveal">
+        <span class="eyebrow">NOTICE</span>
+        <h1>공지사항</h1>
+        <p>공지, 행사 안내, 모집 공고, 보도자료 등 브루잉소울의 최신 소식을 한 곳에서 확인하세요.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="notice-tabs reveal">
+          <button data-notice-tab="all" class="is-active">전체</button>
+          <button data-notice-tab="notice">공지</button>
+          <button data-notice-tab="event">행사안내</button>
+          <button data-notice-tab="recruit">모집공고</button>
+          <button data-notice-tab="press">보도자료</button>
+        </div>
+
+        <ul class="notice-list reveal">
+          <li class="notice-row" data-notice-cat="notice">
+            <span class="notice-cat c-notice">공지</span>
+            <span class="notice-title">브루잉소울 2026 정기 후원 안내</span>
+            <span class="notice-meta">홈페이지 리뉴얼 안내</span>
+            <span class="notice-date">2026.05.10</span>
+          </li>
+          <li class="notice-row" data-notice-cat="event">
+            <span class="notice-cat c-event">행사안내</span>
+            <span class="notice-title">브루잉소울 페스티벌 2026 사전 예약 오픈</span>
+            <span class="notice-meta">서울 / 9월 개최 예정</span>
+            <span class="notice-date">2026.04.28</span>
+          </li>
+          <li class="notice-row" data-notice-cat="recruit">
+            <span class="notice-cat c-recruit">모집공고</span>
+            <span class="notice-title">청년예술가 지원 프로그램 시즌 2 참여자 모집</span>
+            <span class="notice-meta">서류 접수 ~ 5/31</span>
+            <span class="notice-date">2026.04.15</span>
+          </li>
+          <li class="notice-row" data-notice-cat="press">
+            <span class="notice-cat c-press">보도자료</span>
+            <span class="notice-title">Harmony Korea, 국내외 문화교류 네트워크 본격 가동</span>
+            <span class="notice-meta">언론 보도 종합</span>
+            <span class="notice-date">2026.03.22</span>
+          </li>
+          <li class="notice-row" data-notice-cat="event">
+            <span class="notice-cat c-event">행사안내</span>
+            <span class="notice-title">봄맞이 시민참여 워크숍 ‘소울 클래스’ 시즌 1 개강</span>
+            <span class="notice-meta">매주 토요일 운영</span>
+            <span class="notice-date">2026.03.05</span>
+          </li>
+          <li class="notice-row" data-notice-cat="notice">
+            <span class="notice-cat c-notice">공지</span>
+            <span class="notice-title">홈페이지 개인정보처리방침 개정 안내</span>
+            <span class="notice-meta">2026.03.01 시행</span>
+            <span class="notice-date">2026.02.20</span>
+          </li>
+          <li class="notice-row" data-notice-cat="recruit">
+            <span class="notice-cat c-recruit">모집공고</span>
+            <span class="notice-title">2026 페스티벌 운영 자원봉사단 모집</span>
+            <span class="notice-meta">서울 · 부산 권역</span>
+            <span class="notice-date">2026.02.10</span>
+          </li>
+          <li class="notice-row" data-notice-cat="press">
+            <span class="notice-cat c-press">보도자료</span>
+            <span class="notice-title">브루잉소울, 지역상생 프로젝트 확대 발표</span>
+            <span class="notice-meta">로컬 브랜드와 협업 확장</span>
+            <span class="notice-date">2026.01.30</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><span class="logo-mark"></span><span>Brewing Soul</span></a>
+          <p>문화예술 · 공연 · 페스티벌 · 커뮤니티 프로그램으로 사람과 도시를 잇는 브루잉소울입니다.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="about.html">법인소개</a></li>
+            <li><a href="business.html">사업소개</a></li>
+            <li><a href="history.html">연혁</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="contact.html">문의</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-info">
+            <p>서울특별시 OO구 OO로 00</p>
+            <p>대표 02-000-0000</p>
+            <p>hello@brewingsoul.co.kr</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Brewing Soul. All Rights Reserved.</span>
+        <div class="legal">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이메일무단수집거부</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

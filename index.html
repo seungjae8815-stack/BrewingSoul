@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="브루잉소울(Brewing Soul) - 문화예술, 공연, 페스티벌, 커뮤니티 프로그램을 통해 사람과 도시를 연결합니다." />
+  <title>브루잉소울 Brewing Soul</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ================== Header ================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="브루잉소울 홈">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>Brewing Soul</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li><a href="index.html" class="is-active">HOME</a></li>
+          <li><a href="pages/about.html">법인소개</a></li>
+          <li><a href="pages/business.html">사업소개</a></li>
+          <li><a href="pages/history.html">연혁</a></li>
+          <li><a href="pages/gallery.html">갤러리</a></li>
+          <li><a href="pages/notice.html">공지사항</a></li>
+          <li><a href="pages/contact.html">문의</a></li>
+        </ul>
+      </nav>
+      <a href="pages/contact.html" class="btn btn--gradient nav-cta">문의하기</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================== Mobile Nav ================== -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="모바일 메뉴">
+    <ul>
+      <li><a href="index.html" class="is-active">HOME</a></li>
+      <li><a href="pages/about.html">법인소개</a></li>
+      <li><a href="pages/business.html">사업소개</a></li>
+      <li><a href="pages/history.html">연혁</a></li>
+      <li><a href="pages/gallery.html">갤러리</a></li>
+      <li><a href="pages/notice.html">공지사항</a></li>
+      <li><a href="pages/contact.html">문의</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ================== 1. Hero (Main Visual) ================== -->
+    <section class="hero" id="hero">
+      <!-- Background layers -->
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob hero-blob-1"></span>
+        <span class="blob hero-blob-2"></span>
+        <span class="blob hero-blob-3"></span>
+        <span class="blob hero-blob-4"></span>
+        <div class="hero-grid"></div>
+        <div class="hero-noise"></div>
+      </div>
+
+      <!-- Massive background wordmark -->
+      <div class="hero-wordmark" aria-hidden="true">
+        <span>BREWING</span>
+        <span>SOUL</span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="hero-eyebrow reveal">
+            <span class="dot"></span> EST. 2023 · Culture · Arts · Festival
+          </span>
+          <h1 class="hero-title reveal reveal-delay-1">
+            <span class="line-1">영혼을 빚어내는</span>
+            <span class="line-2">
+              <span class="grad-anim">문화의 순간</span><span class="cursor">|</span>
+            </span>
+          </h1>
+          <p class="hero-lead reveal reveal-delay-2">
+            브루잉소울은 공연·페스티벌·커뮤니티 프로그램으로<br />
+            사람과 도시, 예술과 일상을 연결합니다.
+          </p>
+          <div class="hero-ctas reveal reveal-delay-3">
+            <a href="pages/business.html" class="btn btn--gradient hero-btn">
+              사업 살펴보기
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="pages/contact.html" class="btn btn--ghost hero-btn">문의하기</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-2" aria-hidden="true" data-parallax>
+          <!-- Rotating orbit rings -->
+          <div class="orbit-ring orbit-ring-1"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+          <div class="orbit-ring orbit-ring-3"></div>
+
+          <!-- Floating chips -->
+          <div class="hero-chips">
+            <span class="chip c1">♪ 공연</span>
+            <span class="chip c2">✦ 페스티벌</span>
+            <span class="chip c3">♡ 커뮤니티</span>
+            <span class="chip c4">★ Harmony Korea</span>
+            <span class="chip c5">◎ 청년 아티스트</span>
+          </div>
+
+          <!-- Center orb -->
+          <div class="hero-orb">
+            <div class="orb-glow"></div>
+            <div class="orb-inner">
+              <span class="brand-en">BREWING SOUL</span>
+              <span class="brand-kr">브루잉소울</span>
+              <span class="brand-tag">Culture Club</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="hero-stats reveal reveal-delay-4">
+        <div class="container hero-stats-inner">
+          <div class="stat-item">
+            <span class="stat-num"><span data-count="50">0</span><i>+</i></span>
+            <span class="stat-label">개최한 행사</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num"><span data-count="200">0</span><i>+</i></span>
+            <span class="stat-label">참여 아티스트</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num"><span data-count="15">0</span><i>K+</i></span>
+            <span class="stat-label">참여 시민</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num"><span data-count="30">0</span><i>+</i></span>
+            <span class="stat-label">파트너 기관</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#intro" class="hero-scroll" aria-label="아래로 스크롤">
+        <span class="ring">
+          <span class="dot"></span>
+        </span>
+        <span class="txt">SCROLL</span>
+      </a>
+
+      <!-- Marquee -->
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>BREWING SOUL</span><span class="sep">✦</span>
+          <span>CULTURE · ARTS · FESTIVAL</span><span class="sep">✦</span>
+          <span>청년 예술가와 함께</span><span class="sep">✦</span>
+          <span>HARMONY KOREA</span><span class="sep">✦</span>
+          <span>SINCE 2023</span><span class="sep">✦</span>
+          <span>BREWING SOUL</span><span class="sep">✦</span>
+          <span>CULTURE · ARTS · FESTIVAL</span><span class="sep">✦</span>
+          <span>청년 예술가와 함께</span><span class="sep">✦</span>
+          <span>HARMONY KOREA</span><span class="sep">✦</span>
+          <span>SINCE 2023</span><span class="sep">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <span id="intro" style="position:relative;top:-72px;"></span>
+
+    <!-- ================== 2. Intro ================== -->
+    <section class="section intro">
+      <div class="container intro-grid">
+        <div class="intro-head reveal">
+          <span class="section-eyebrow">About Brewing Soul</span>
+          <h2>
+            문화예술로 <span class="grad">사람을 잇다</span>
+          </h2>
+        </div>
+
+        <div class="intro-text">
+          <p class="reveal">
+            브루잉소울(Brewing Soul)은 문화예술 · 공연 · 페스티벌 · 커뮤니티 프로그램을
+            기획하고 운영하는 문화예술 단체입니다. 다양한 장르의 아티스트, 시민,
+            지역 커뮤니티와 함께 의미 있는 문화의 순간을 만들어 갑니다.
+          </p>
+          <p class="reveal reveal-delay-1">
+            우리는 청년예술가의 무대를 넓히고, 국내외 네트워크를 연결하며,
+            지역과 함께 성장하는 문화 생태계를 그려갑니다.
+          </p>
+
+          <div class="intro-keywords">
+            <div class="keyword-card c-purple reveal reveal-delay-1">
+              <div class="ico">♪</div>
+              <h4>문화예술</h4>
+              <p>다양한 장르의 예술을 시민의 일상으로</p>
+            </div>
+            <div class="keyword-card c-cyan reveal reveal-delay-2">
+              <div class="ico">◎</div>
+              <h4>공연</h4>
+              <p>아티스트와 관객을 잇는 무대 기획</p>
+            </div>
+            <div class="keyword-card c-yellow reveal reveal-delay-3">
+              <div class="ico">✦</div>
+              <h4>페스티벌</h4>
+              <p>도시와 사람이 함께 빚는 축제의 순간</p>
+            </div>
+            <div class="keyword-card c-pink reveal reveal-delay-4">
+              <div class="ico">♡</div>
+              <h4>커뮤니티</h4>
+              <p>참여와 협업으로 자라는 문화 공동체</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== 3. Business ================== -->
+    <section class="section business">
+      <span class="blob" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="section-eyebrow">Our Business</span>
+            <h2 class="section-title">사업소개</h2>
+            <p class="section-desc">
+              브루잉소울이 만들어가는 다섯 가지 문화예술의 흐름을 소개합니다.
+            </p>
+          </div>
+          <a href="pages/business.html" class="btn btn--ghost">
+            전체 보기
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="business-grid">
+          <a href="pages/business.html#festival" class="business-card c-purple reveal">
+            <span class="num">01</span>
+            <h3>브루잉소울 페스티벌</h3>
+            <p>공연 · 체험 · 부스 · 시민참여 · 로컬 협업이 어우러진 시그니처 축제.</p>
+            <span class="more">더 알아보기 →</span>
+          </a>
+          <a href="pages/business.html#culture" class="business-card c-cyan reveal reveal-delay-1">
+            <span class="num">02</span>
+            <h3>문화예술 프로그램</h3>
+            <p>공연, 워크숍, 클래스, 체험, 커뮤니티 프로그램을 상시 운영합니다.</p>
+            <span class="more">더 알아보기 →</span>
+          </a>
+          <a href="pages/business.html#youth" class="business-card c-yellow reveal reveal-delay-2">
+            <span class="num">03</span>
+            <h3>청년예술가 지원</h3>
+            <p>공연 기회, 쇼케이스, 협업 프로젝트, 홍보 콘텐츠를 함께합니다.</p>
+            <span class="more">더 알아보기 →</span>
+          </a>
+          <a href="pages/business.html#harmony" class="business-card c-pink reveal reveal-delay-1">
+            <span class="num">04</span>
+            <h3>Harmony Korea</h3>
+            <p>문화교류 · 공연 · 국내외 네트워크 · 참여형 문화 콘텐츠 프로젝트.</p>
+            <span class="more">더 알아보기 →</span>
+          </a>
+          <a href="pages/business.html#local" class="business-card c-green reveal reveal-delay-2">
+            <span class="num">05</span>
+            <h3>지역상생 프로젝트</h3>
+            <p>지역 커뮤니티 협업, 로컬 브랜드 참여, 친환경 · 공정무역 캠페인.</p>
+            <span class="more">더 알아보기 →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== 4. History ================== -->
+    <section class="section history">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="section-eyebrow">Our Journey</span>
+            <h2 class="section-title">연혁 요약</h2>
+            <p class="section-desc">브루잉소울이 걸어온 길과 앞으로 나아갈 방향.</p>
+          </div>
+          <a href="pages/history.html" class="btn btn--ghost">
+            전체 연혁 보기
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-year">2026</span>
+            <div class="timeline-body">
+              <h4>주요 사업 및 행사 예정</h4>
+              <p>브루잉소울 페스티벌 확장, Harmony Korea 국제 네트워크 본격화, 청년예술가 지원 프로그램 시즌 2 운영.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal reveal-delay-1">
+            <span class="timeline-year">2025</span>
+            <div class="timeline-body">
+              <h4>문화예술 프로그램 전국 확대</h4>
+              <p>브루잉소울 주요 행사, 문화예술 프로그램, Harmony Korea 관련 활동을 본격 전개.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal reveal-delay-2">
+            <span class="timeline-year">2024</span>
+            <div class="timeline-body">
+              <h4>브루잉소울 페스티벌 개최</h4>
+              <p>시그니처 페스티벌의 첫 정식 개최, 공연 및 체험 프로그램 시민 참여 확대.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal reveal-delay-3">
+            <span class="timeline-year">2023</span>
+            <div class="timeline-body">
+              <h4>브루잉소울 사업 시작</h4>
+              <p>법인 설립 및 주요 문화예술 활동 운영의 첫걸음.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== 5. Gallery ================== -->
+    <section class="section gallery">
+      <span class="blob" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="section-eyebrow">Gallery</span>
+            <h2 class="section-title">현장의 순간들</h2>
+            <p class="section-desc">공연 · 행사 · 체험 프로그램의 다채로운 모습.</p>
+          </div>
+          <a href="pages/gallery.html" class="btn btn--ghost">
+            갤러리 전체 보기
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="gallery-grid">
+          <a href="pages/gallery.html" class="gallery-item tall reveal">
+            <div class="ph">✦</div>
+            <div class="overlay"><span class="tag">Festival</span><h5>브루잉소울 페스티벌 2024</h5></div>
+          </a>
+          <a href="pages/gallery.html" class="gallery-item reveal reveal-delay-1">
+            <div class="ph">♪</div>
+            <div class="overlay"><span class="tag">Performance</span><h5>가을 음악회</h5></div>
+          </a>
+          <a href="pages/gallery.html" class="gallery-item reveal reveal-delay-2">
+            <div class="ph">◎</div>
+            <div class="overlay"><span class="tag">Workshop</span><h5>아티스트 워크숍</h5></div>
+          </a>
+          <a href="pages/gallery.html" class="gallery-item wide reveal reveal-delay-1">
+            <div class="ph">✶</div>
+            <div class="overlay"><span class="tag">Harmony Korea</span><h5>국제 문화교류 행사</h5></div>
+          </a>
+          <a href="pages/gallery.html" class="gallery-item reveal reveal-delay-2">
+            <div class="ph">♡</div>
+            <div class="overlay"><span class="tag">Community</span><h5>지역상생 캠페인</h5></div>
+          </a>
+          <a href="pages/gallery.html" class="gallery-item reveal reveal-delay-3">
+            <div class="ph">◇</div>
+            <div class="overlay"><span class="tag">Exhibition</span><h5>부스·전시</h5></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== 6. Notice ================== -->
+    <section class="section notice">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="section-eyebrow">Notice</span>
+            <h2 class="section-title">공지사항</h2>
+            <p class="section-desc">행사 안내, 모집 공고, 보도자료 등의 최신 소식.</p>
+          </div>
+          <a href="pages/notice.html" class="btn btn--ghost">
+            전체 공지 보기
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <ul class="notice-list">
+          <li class="notice-row reveal">
+            <span class="notice-cat c-notice">공지</span>
+            <span class="notice-title">브루잉소울 2026 정기 후원 안내</span>
+            <span class="notice-meta">홈페이지 리뉴얼 안내</span>
+            <span class="notice-date">2026.05.10</span>
+          </li>
+          <li class="notice-row reveal">
+            <span class="notice-cat c-event">행사안내</span>
+            <span class="notice-title">브루잉소울 페스티벌 2026 사전 예약 오픈</span>
+            <span class="notice-meta">서울 / 9월 개최 예정</span>
+            <span class="notice-date">2026.04.28</span>
+          </li>
+          <li class="notice-row reveal">
+            <span class="notice-cat c-recruit">모집공고</span>
+            <span class="notice-title">청년예술가 지원 프로그램 시즌 2 참여자 모집</span>
+            <span class="notice-meta">서류 접수 ~ 5/31</span>
+            <span class="notice-date">2026.04.15</span>
+          </li>
+          <li class="notice-row reveal">
+            <span class="notice-cat c-press">보도자료</span>
+            <span class="notice-title">Harmony Korea, 국내외 문화교류 네트워크 본격 가동</span>
+            <span class="notice-meta">언론 보도 종합</span>
+            <span class="notice-date">2026.03.22</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================== 7. Inquiry ================== -->
+    <section class="section inquiry">
+      <span class="blob" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center;">
+          <span class="section-eyebrow">Contact</span>
+          <h2 class="section-title">함께하고 싶은 이야기를 들려주세요</h2>
+          <p class="section-desc" style="margin-inline:auto;">
+            협력 · 후원 · 참여, 어떤 제안도 환영합니다. 알맞은 문의 유형을 선택해 주세요.
+          </p>
+        </div>
+
+        <div class="inquiry-grid">
+          <a href="pages/contact.html#general" class="inquiry-card c-purple reveal">
+            <div class="ico">?</div>
+            <h4>일반문의</h4>
+            <p>브루잉소울에 대한 모든 일반적 문의를 받습니다.</p>
+            <span class="arrow-link">문의하기 →</span>
+          </a>
+          <a href="pages/contact.html#partner" class="inquiry-card c-cyan reveal reveal-delay-1">
+            <div class="ico">⌘</div>
+            <h4>협력문의</h4>
+            <p>기관 · 단체 · 기업과의 협력 프로젝트를 제안합니다.</p>
+            <span class="arrow-link">문의하기 →</span>
+          </a>
+          <a href="pages/contact.html#sponsor" class="inquiry-card c-yellow reveal reveal-delay-2">
+            <div class="ico">★</div>
+            <h4>후원·협찬문의</h4>
+            <p>지속 가능한 문화예술 생태계를 함께 만들어 가요.</p>
+            <span class="arrow-link">문의하기 →</span>
+          </a>
+          <a href="pages/contact.html#artist" class="inquiry-card c-pink reveal reveal-delay-3">
+            <div class="ico">♪</div>
+            <h4>아티스트 참여</h4>
+            <p>무대와 프로젝트에 참여할 아티스트를 기다립니다.</p>
+            <span class="arrow-link">문의하기 →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================== 8. Footer ================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <span>Brewing Soul</span>
+          </a>
+          <p>문화예술 · 공연 · 페스티벌 · 커뮤니티 프로그램으로 사람과 도시를 잇는 브루잉소울입니다.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="pages/about.html">법인소개</a></li>
+            <li><a href="pages/business.html">사업소개</a></li>
+            <li><a href="pages/history.html">연혁</a></li>
+            <li><a href="pages/gallery.html">갤러리</a></li>
+            <li><a href="pages/notice.html">공지사항</a></li>
+            <li><a href="pages/contact.html">문의</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-info">
+            <p>서울특별시 OO구 OO로 00</p>
+            <p>대표 02-000-0000</p>
+            <p>hello@brewingsoul.co.kr</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Brewing Soul. All Rights Reserved.</span>
+        <div class="legal">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이메일무단수집거부</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

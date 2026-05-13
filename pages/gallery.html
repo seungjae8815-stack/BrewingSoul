@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>갤러리 | 브루잉소울 Brewing Soul</title>
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="../assets/images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,7 +17,7 @@
 <body>
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="../index.html" class="logo"><span class="logo-mark"></span><span>Brewing Soul</span></a>
+      <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="" class="logo-mark" /><span>Brewing Soul</span></a>
       <nav>
         <ul class="nav-list">
           <li><a href="../index.html">HOME</a></li>
@@ -68,78 +70,159 @@
         </div>
 
         <div class="gallery-page-grid">
-          <a href="#" class="gallery-item reveal" data-gallery-cat="event">
-            <div class="ph">✦</div>
-            <div class="overlay">
-              <span class="tag">Festival</span>
-              <h5>브루잉소울 페스티벌 2024</h5>
-              <span class="meta">2024.09 · 서울</span>
+          <!-- 2025 제3회 브루잉소울 페스티벌 -->
+          <button class="gallery-item reveal" data-gallery-cat="event" data-lightbox
+            data-src="../assets/images/gallery/2025-festival-1.jpg"
+            data-tag="Festival" data-title="제3회 브루잉소울 페스티벌" data-meta="2025 · 메인 포스터">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2025-festival-1.jpg" alt="제3회 브루잉소울 페스티벌 포스터" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">01</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
             </div>
-          </a>
-          <a href="#" class="gallery-item reveal" data-gallery-cat="performance">
-            <div class="ph">♪</div>
-            <div class="overlay">
-              <span class="tag">Performance</span>
-              <h5>가을 음악회</h5>
-              <span class="meta">2025.10 · 야외 스테이지</span>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Festival</span>
+              <h5 class="gallery-title">제3회 브루잉소울 페스티벌</h5>
+              <span class="gallery-meta">2025 · 메인 포스터</span>
             </div>
-          </a>
-          <a href="#" class="gallery-item reveal" data-gallery-cat="experience">
-            <div class="ph">◎</div>
-            <div class="overlay">
-              <span class="tag">Workshop</span>
-              <h5>아티스트 워크숍</h5>
-              <span class="meta">2025.06 · 브루잉 스튜디오</span>
+          </button>
+
+          <button class="gallery-item reveal" data-gallery-cat="performance" data-lightbox
+            data-src="../assets/images/gallery/2025-festival-2.jpg"
+            data-tag="Performance" data-title="제3회 페스티벌 라인업" data-meta="2025 · 아티스트 라인업">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2025-festival-2.jpg" alt="제3회 브루잉소울 페스티벌 라인업 포스터" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">02</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
             </div>
-          </a>
-          <a href="#" class="gallery-item reveal" data-gallery-cat="harmony">
-            <div class="ph">✶</div>
-            <div class="overlay">
-              <span class="tag">Harmony Korea</span>
-              <h5>국제 문화교류 행사</h5>
-              <span class="meta">2025.11 · 서울 · 도쿄</span>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Performance</span>
+              <h5 class="gallery-title">제3회 페스티벌 라인업</h5>
+              <span class="gallery-meta">2025 · 아티스트 라인업</span>
             </div>
-          </a>
-          <a href="#" class="gallery-item reveal" data-gallery-cat="event">
-            <div class="ph">♡</div>
-            <div class="overlay">
-              <span class="tag">Community</span>
-              <h5>지역상생 캠페인</h5>
-              <span class="meta">2025.07 · 마을 곳곳</span>
+          </button>
+
+          <!-- 2025 Harmony Korea -->
+          <button class="gallery-item reveal" data-gallery-cat="harmony" data-lightbox
+            data-src="../assets/images/gallery/2025-harmony-main.jpg"
+            data-tag="Harmony Korea" data-title="제1회 Harmony Korea" data-meta="2025 · 메인 키비주얼">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2025-harmony-main.jpg" alt="Harmony Korea 메인 키비주얼" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">03</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
             </div>
-          </a>
-          <a href="#" class="gallery-item reveal" data-gallery-cat="exhibition">
-            <div class="ph">◇</div>
-            <div class="overlay">
-              <span class="tag">Exhibition</span>
-              <h5>부스 · 전시</h5>
-              <span class="meta">2024.09 · 페스티벌 현장</span>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Harmony Korea</span>
+              <h5 class="gallery-title">제1회 Harmony Korea</h5>
+              <span class="gallery-meta">2025 · 메인 키비주얼</span>
             </div>
-          </a>
-          <a href="#" class="gallery-item reveal" data-gallery-cat="performance">
-            <div class="ph">♬</div>
-            <div class="overlay">
-              <span class="tag">Showcase</span>
-              <h5>청년예술가 쇼케이스</h5>
-              <span class="meta">2025.05 · 브루잉 라운지</span>
+          </button>
+
+          <button class="gallery-item reveal" data-gallery-cat="harmony" data-lightbox
+            data-src="../assets/images/gallery/2025-harmony-1.jpg"
+            data-tag="Harmony Korea" data-title="Harmony Korea 콘텐츠" data-meta="2025 · 인스타 콘텐츠 01">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2025-harmony-1.jpg" alt="Harmony Korea 인스타 콘텐츠 1" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">04</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
             </div>
-          </a>
-          <a href="#" class="gallery-item reveal" data-gallery-cat="experience">
-            <div class="ph">✿</div>
-            <div class="overlay">
-              <span class="tag">Class</span>
-              <h5>시민 참여 클래스</h5>
-              <span class="meta">2025.04 · 정기 운영</span>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Harmony Korea</span>
+              <h5 class="gallery-title">Harmony Korea 콘텐츠 ①</h5>
+              <span class="gallery-meta">2025 · 인스타 콘텐츠</span>
             </div>
-          </a>
-          <a href="#" class="gallery-item reveal" data-gallery-cat="harmony">
-            <div class="ph">★</div>
-            <div class="overlay">
-              <span class="tag">Harmony Korea</span>
-              <h5>해외 아티스트 콜라보</h5>
-              <span class="meta">2025.12 · 합동 무대</span>
+          </button>
+
+          <button class="gallery-item reveal" data-gallery-cat="harmony" data-lightbox
+            data-src="../assets/images/gallery/2025-harmony-2.jpg"
+            data-tag="Harmony Korea" data-title="Harmony Korea 콘텐츠" data-meta="2025 · 인스타 콘텐츠 02">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2025-harmony-2.jpg" alt="Harmony Korea 인스타 콘텐츠 2" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">05</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
             </div>
-          </a>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Harmony Korea</span>
+              <h5 class="gallery-title">Harmony Korea 콘텐츠 ②</h5>
+              <span class="gallery-meta">2025 · 인스타 콘텐츠</span>
+            </div>
+          </button>
+
+          <!-- 2024 제2회 브루잉소울 페스티벌 -->
+          <button class="gallery-item reveal" data-gallery-cat="event" data-lightbox
+            data-src="../assets/images/gallery/2024-festival-1.png"
+            data-tag="Festival" data-title="제2회 브루잉소울 페스티벌" data-meta="2024 · 메인 포스터">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2024-festival-1.png" alt="제2회 브루잉소울 페스티벌 포스터 A" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">06</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </div>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Festival</span>
+              <h5 class="gallery-title">제2회 브루잉소울 페스티벌</h5>
+              <span class="gallery-meta">2024 · 메인 포스터</span>
+            </div>
+          </button>
+
+          <button class="gallery-item reveal" data-gallery-cat="exhibition" data-lightbox
+            data-src="../assets/images/gallery/2024-festival-2.png"
+            data-tag="Exhibition" data-title="제2회 페스티벌 프로그램" data-meta="2024 · 프로그램 포스터">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2024-festival-2.png" alt="제2회 브루잉소울 페스티벌 포스터 B" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">07</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </div>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Exhibition</span>
+              <h5 class="gallery-title">제2회 페스티벌 프로그램</h5>
+              <span class="gallery-meta">2024 · 프로그램 포스터</span>
+            </div>
+          </button>
+
+          <!-- 2023 제1회 브루잉소울 페스티벌 -->
+          <button class="gallery-item reveal" data-gallery-cat="event" data-lightbox
+            data-src="../assets/images/gallery/2023-festival-1.jpg"
+            data-tag="Festival" data-title="제1회 브루잉소울 페스티벌" data-meta="2023 · 메인 포스터">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2023-festival-1.jpg" alt="제1회 브루잉소울 페스티벌 포스터 1" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">08</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </div>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Festival</span>
+              <h5 class="gallery-title">제1회 브루잉소울 페스티벌</h5>
+              <span class="gallery-meta">2023 · 메인 포스터</span>
+            </div>
+          </button>
+
+          <button class="gallery-item reveal" data-gallery-cat="performance" data-lightbox
+            data-src="../assets/images/gallery/2023-festival-2.jpg"
+            data-tag="Performance" data-title="제1회 페스티벌 공연" data-meta="2023 · 공연 포스터">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2023-festival-2.jpg" alt="제1회 브루잉소울 페스티벌 포스터 2" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">09</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </div>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Performance</span>
+              <h5 class="gallery-title">제1회 페스티벌 공연</h5>
+              <span class="gallery-meta">2023 · 공연 포스터</span>
+            </div>
+          </button>
+
+          <button class="gallery-item reveal" data-gallery-cat="experience" data-lightbox
+            data-src="../assets/images/gallery/2023-festival-3.jpg"
+            data-tag="Experience" data-title="제1회 페스티벌 체험" data-meta="2023 · 체험 포스터">
+            <div class="gallery-img-wrap">
+              <img src="../assets/images/gallery/2023-festival-3.jpg" alt="제1회 브루잉소울 페스티벌 포스터 3" class="gallery-img" loading="lazy" />
+              <span class="gallery-num">10</span>
+              <span class="gallery-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </div>
+            <div class="gallery-info">
+              <span class="gallery-tag">— Experience</span>
+              <h5 class="gallery-title">제1회 페스티벌 체험</h5>
+              <span class="gallery-meta">2023 · 체험 포스터</span>
+            </div>
+          </button>
         </div>
       </div>
     </section>
@@ -149,7 +232,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="../index.html" class="logo"><span class="logo-mark"></span><span>Brewing Soul</span></a>
+          <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="" class="logo-mark" /><span>Brewing Soul</span></a>
           <p>문화예술 · 공연 · 페스티벌 · 커뮤니티 프로그램으로 사람과 도시를 잇는 브루잉소울입니다.</p>
         </div>
         <div class="footer-col">
@@ -174,14 +257,21 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <div class="footer-info">
-            <p>서울특별시 OO구 OO로 00</p>
-            <p>대표 02-000-0000</p>
-            <p>hello@brewingsoul.co.kr</p>
+            <p>서울특별시 중구 서소문로9길 28,<br />201동 1111호 (순화동, 덕수궁 롯데캐슬)</p>
+            <p>대표 010-8792-9084</p>
+            <p>sarang9191@naver.com</p>
           </div>
         </div>
       </div>
+      <div class="footer-partners">
+        <span class="partners-label">Certified · Partners</span>
+        <a href="https://www.hometax.go.kr/" target="_blank" rel="noopener" class="partner-link" aria-label="국세청 홈택스 (새 창에서 열림)">
+          <img src="../assets/images/hometax-banner.jpg" alt="국세청 홈택스 Hometax" />
+        </a>
+      </div>
+
       <div class="footer-bottom">
-        <span>© 2026 Brewing Soul. All Rights Reserved.</span>
+        <span>© 2026 사단법인 브루잉소울. All Rights Reserved.</span>
         <div class="legal">
           <a href="#">개인정보처리방침</a>
           <a href="#">이메일무단수집거부</a>

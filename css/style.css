@@ -585,6 +585,70 @@
 }
 
 /* ===========================
+   HOME — Intro Collage (inside intro-head)
+   =========================== */
+.intro-collage {
+  position: relative;
+  display: block;
+  margin-top: 32px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1),
+    border-color 0.5s, box-shadow 0.5s;
+  aspect-ratio: 1 / 1;
+}
+.intro-collage:hover {
+  transform: translateY(-4px);
+  border-color: rgba(181, 123, 255, 0.45);
+  box-shadow:
+    0 32px 70px rgba(0, 0, 0, 0.55),
+    0 0 50px rgba(181, 123, 255, 0.18);
+}
+.intro-collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.intro-collage:hover img {
+  transform: scale(1.03);
+}
+.intro-collage-cta {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--color-text);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: gap 0.3s, background 0.3s, border-color 0.3s;
+}
+.intro-collage:hover .intro-collage-cta {
+  gap: 12px;
+  background: rgba(181, 123, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.intro-collage-cta .arrow {
+  width: 14px;
+  height: 14px;
+}
+
+/* ===========================
    HOME — Business
    =========================== */
 .business {
@@ -1136,11 +1200,12 @@
 }
 .greeting-figure {
   position: relative;
-  aspect-ratio: 4/5;
+  aspect-ratio: 1 / 1;
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--color-border);
   background: var(--color-bg-card);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
 .greeting-figure img {
   position: absolute;
@@ -1151,14 +1216,7 @@
   transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 .greeting-figure:hover img {
-  transform: scale(1.04);
-}
-.greeting-figure-overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(10, 10, 10, 0.1) 30%, rgba(10, 10, 10, 0.55) 100%),
-    radial-gradient(circle at 30% 30%, rgba(181, 123, 255, 0.18), transparent 60%);
+  transform: scale(1.03);
 }
 .greeting-text h3 {
   font-size: clamp(24px, 2.6vw, 32px);
@@ -1317,6 +1375,47 @@
   box-shadow: 0 0 24px rgba(181, 123, 255, 0.6);
 }
 
+/* -------- Business portfolio showcase -------- */
+.biz-portfolio {
+  background: var(--color-bg);
+  padding-block: clamp(40px, 6vw, 72px);
+  border-bottom: 1px solid var(--color-border);
+}
+.biz-portfolio .section-desc strong {
+  color: var(--color-purple);
+  font-weight: 600;
+}
+.biz-portfolio-frame {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #050507;
+  border: 1px solid var(--color-border);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1),
+    border-color 0.5s, box-shadow 0.5s;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.biz-portfolio-frame:hover {
+  transform: translateY(-4px);
+  border-color: rgba(123, 224, 240, 0.35);
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.65),
+    0 0 60px rgba(123, 224, 240, 0.15);
+}
+.biz-portfolio-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .biz-portfolio-frame { border-radius: 14px; }
+}
+
 /* -------- Business detail -------- */
 .biz-detail {
   padding-top: clamp(56px, 7vw, 96px);
@@ -1389,6 +1488,101 @@
 .biz-detail.c-yellow .biz-features li::before { background: var(--color-yellow); }
 .biz-detail.c-pink .biz-features li::before { background: var(--color-pink); }
 .biz-detail.c-green .biz-features li::before { background: var(--color-green); }
+
+/* biz-blocks (제목+본문 카드 묶음) */
+.biz-blocks {
+  display: grid;
+  gap: 18px;
+}
+.biz-block {
+  padding: 22px 24px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  transition: border-color var(--t-fast), transform var(--t-fast);
+}
+.biz-block:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-border-strong);
+}
+.biz-block h4 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 16px;
+}
+.biz-block h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.biz-detail.c-purple .biz-block h4::before { background: var(--color-purple); }
+.biz-detail.c-cyan .biz-block h4::before { background: var(--color-cyan); }
+.biz-detail.c-yellow .biz-block h4::before { background: var(--color-yellow); }
+.biz-detail.c-pink .biz-block h4::before { background: var(--color-pink); }
+.biz-detail.c-green .biz-block h4::before { background: var(--color-green); }
+.biz-block p {
+  font-size: 14.5px;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+/* biz-photos (사업별 사진 갤러리) */
+.biz-photos {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.biz-photo {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: transform var(--t-fast), border-color var(--t-fast),
+    box-shadow var(--t-fast);
+}
+.biz-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.4));
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+.biz-photo:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-border-strong);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+.biz-photo:hover::after { opacity: 1; }
+.biz-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.biz-photo:hover img { transform: scale(1.06); }
+
+@media (max-width: 960px) {
+  .biz-photos { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .biz-photos { grid-template-columns: repeat(2, 1fr); }
+}
 
 /* -------- History page -------- */
 .history-full .timeline {
